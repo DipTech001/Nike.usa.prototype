@@ -286,64 +286,188 @@ body {
     }
 }
 
+.carousel-indicators {
+    cursor: pointer;
+}
+
 /* small fine tuning for menu columns */
 .mega-menu .col-md-3,
 .mega-menu .col-md-4 {
     margin-bottom: 8px;
 }
+
 .carousel-item img {
-      height: 700px;
-      object-fit: cover;
-    }
+    height: 700px;
+    object-fit: cover;
+}
 
-    .carousel-caption h1 {
-      font-weight: 800;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    }
+.carousel-caption h1 {
+    font-weight: 800;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 
-    .carousel-control-buttons button {
-      width: 40px;
-      height: 40px;
-      font-size: 18px;
-      background-color: rgba(255, 255, 255, 0.85);
-      border: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-    }
+.carousel-control-buttons button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
 
-    .carousel-indicators [data-bs-target] {
-      background-color: #000;
-    }
+.carousel-indicators [data-bs-target] {
+    background-color: #000;
+}
 
-    /* ✅ Your custom hero text */
-    .custom-hero-text {
-      font-size: 4.5rem;     /* Desktop size */
-      line-height: 1.1;
-      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    }
-     .custom-bold {
+/* ✅ Your custom hero text */
+.custom-hero-text {
+    font-size: 4.5rem;
+    /* Desktop size */
+    line-height: 1.1;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.custom-bold {
     font-weight: 900 !important;
+}
+
+@media (max-width: 768px) {
+    .custom-hero-text {
+        font-size: 2.5rem;
+        /* Mobile size */
+    }
+}
+
+.carousel-item.active {
+    transform: translateX(20px);
+}
+
+.carousel-item.active .carousel-caption {
+    transform: translateX(20px);
+}
+
+@media (max-width: 920px) {
+
+    #slide1-img,
+    #slide2-img,
+    #slide3-img,
+    #slide4-img,
+    #slide5-img {
+        height: auto;
+    }
+}
+
+body, html {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* SECTION CONTAINER */
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* CARD CONTAINER */
+.card {
+  position: relative;
+  flex: 1 1 50%;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEXT CONTENT */
+.card-content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: white;
+}
+
+.card-content p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card-content h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  max-width: 400px;
+}
+
+/* BUTTON */
+.shop-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media (max-width: 992px) {
+  .card {
+    flex: 1 1 100%;
+    max-height: none;
   }
 
-    @media (max-width: 768px) {
-      .custom-hero-text {
-        font-size: 2.5rem;   /* Mobile size */
-      }
-    }
-  .carousel-item.active {
-  transform: translateX(20px);
-}
-.carousel-item.active .carousel-caption {
-  transform: translateX(20px);
-}
-@media (max-width: 920px) {
-  #slide1-img,
-  #slide2-img,
-  #slide3-img,
-  #slide4-img,
-  #slide5-img {
-    height: auto;
+  .card-content {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .card-content h2 {
+    font-size: 22px;
   }
 }
+
+@media (max-width: 576px) {
+  .card-content h2 {
+    font-size: 18px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+  }
+
+  .shop-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+
+
+/* @media (max-width:1440px) {
+    .con{
+        width: 100%;
+    }
+    .pics {
+        width: 90%;
+    }
+    .con01 h5{
+        left: 20px;
+    }
+    .con01 h1{
+        left: 20px;
+    }
+    .btn1{
+        width: 12%;
+        left: 20px;
+    }
+} */
