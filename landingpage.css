@@ -83,12 +83,14 @@ body {
 .dropdown-item:hover {
     background-color: #f5f5f5;
 }
+
 .dropdown .dropdown-menu {
-  display: none;
-  margin-top: 0; 
+    display: none;
+    margin-top: 0;
 }
+
 .dropdown:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 
 .top-links a:hover {
@@ -99,16 +101,17 @@ body {
 .nike-header {
     background: #fff;
     border-bottom: 1px solid var(--border-light);
+
 }
 
 .navbar {
-    padding: 10px 18px;
+    padding: 1px 5px;
 }
 
 .navbar-brand img {
     display: block;
-     width: 60px;
-  height: auto;
+    width: 60px;
+    height: auto;
 }
 
 /* Nav links (center) */
@@ -288,6 +291,50 @@ body {
 .mega-menu .col-md-4 {
     margin-bottom: 8px;
 }
-.carousel-indicators h1{
-font: 250px;
+.carousel-item img {
+      height: 700px;
+      object-fit: cover;
+    }
+
+    .carousel-caption h1 {
+      font-weight: 800;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-control-buttons button {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      background-color: #000;
+    }
+
+    /* ✅ Your custom hero text */
+    .custom-hero-text {
+      font-size: 4.5rem;     /* Desktop size */
+      line-height: 1.1;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+     .custom-bold {
+    font-weight: 900 !important;
+  }
+
+    @media (max-width: 768px) {
+      .custom-hero-text {
+        font-size: 2.5rem;   /* Mobile size */
+      }
+    }
+  .carousel-item.active {
+  transform: translateX(20px);
+}
+.carousel-item.active .carousel-caption {
+  transform: translateX(20px);
 }
