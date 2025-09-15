@@ -668,7 +668,70 @@
         </div>
     </section>
 
+<div class="container my-5 position-relative">
+  <h3 class="mb-4 fw-bold">Shop The Classics</h3>
 
+  <!-- Left / Right buttons -->
+  <button class="slider-btn left" onclick="scrollSlider(-1)">&#8249;</button>
+  <button class="slider-btn right" onclick="scrollSlider(1)">&#8250;</button>
+
+  <!-- Product slider -->
+  <div id="productSlider" class="product-slider">
+    <div class="product-card">
+      <img src="./image/0001.jpg" alt="Air Jordan 1">
+      <div class="mt-2">Air Jordan 1</div>
+    </div>
+    <div class="product-card">
+      <img src="./0002.jpg" alt="Dunk">
+      <div class="mt-2">Dunk</div>
+    </div>
+    <div class="product-card">
+      <img src="./0003.jpg" alt="Field General">
+      <div class="mt-2">Field General</div>
+    </div>
+    <div class="product-card">
+      <img src="./0004.jpg" alt="Air Force 1">
+      <div class="mt-2">Air Force 1</div>
+    </div>
+    <div class="product-card">
+      <img src="./0005.jpg" alt="Air Max">
+      <div class="mt-2">Air Max</div>
+    </div>
+        <div class="product-card">
+      <img src="./0006.jpg" alt="Air Max">
+      <div class="mt-2">Vomero</div>
+    </div>
+        <div class="product-card">
+      <img src="./0007.jpg" alt="Air Max">
+      <div class="mt-2">Cortez</div>
+    </div>
+        <div class="product-card">
+      <img src="./0008.jpg" alt="Air Max">
+      <div class="mt-2">C1TY</div>
+  </div>
+</div>
+
+<script>
+  function scrollSlider(direction) {
+    const slider = document.getElementById("productSlider");
+    let cardWidth = document.querySelector(".product-card").offsetWidth + 20; // card + gap
+    slider.scrollBy({ left: direction * cardWidth, behavior: "smooth" });
+  }
+</script>
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
