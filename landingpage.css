@@ -8,7 +8,9 @@
 
 /* Reset basics */
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 body {
@@ -514,6 +516,7 @@ body, html {
   padding-bottom: 10px;
   width: 100%; /* Default width */
   position: relative;
+  cursor: pointer;
 }
 
 .product-slider::-webkit-scrollbar {
@@ -591,3 +594,36 @@ body, html {
     width: 120px;
   }
 } 
+.nikelogo1{
+    padding-top: 150px;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+.nikelogoo img{
+    width: 100px;
+    padding-bottom: 40px;
+}
+.find ul{
+display: flex;
+gap: 2em;
+color: black;
+}
+.find ul :hover{
+    color: #BAC2B6;
+}
+.find li a{
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+@media(max-width:411px){
+    .find li a{
+        font-size: 12px;
+    }
+}
+@media(max-width:320px){
+    .find li a{
+        font-size: 10px;
+    }
+}
